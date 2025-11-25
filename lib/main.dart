@@ -63,6 +63,7 @@ class _GameScreenState extends State<GameScreen> {
   }
 
   void _startGame() {
+    // Make sure not to restart the game if it is already running
     if (_isRunning) return;
 
     setState(() {
